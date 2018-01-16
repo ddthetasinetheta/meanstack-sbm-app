@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SBM DIGITAL MARKETING</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- end build -->
+ 
+  </head>
+  <body ng-app="sbmApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand align-middle" href="#/"><img src="images/logo.png" height=30 width=41></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#/"><span class="sbm" >SBM</span> Digital Marketing</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+            <ul class="nav navbar-nav">
+              <li class="active"><a ui-sref="app">Home</a></li>
+              <li><a ui-sref="app.about">About</a></li>
+              <li><a ng-href="#/">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    <div ui-view="content"></div>
+    </div>
+
+    <div class="row-footer">
+      <div class="container">
+        <div class="col-xs-2 col-sm-1">
+              <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i>
+              <span class="sr-only">Loading...</span>
+        </div>
+        <div class="col-xs-offset-2 col-xs-2 col-sm-offset-1 col-sm-1">
+                <p><span>Working</span></p>
+        </div>
+              
+        <div class="col-xs-12">
+          <p style="padding:10px;"></p>
+          <p align=center>© Copyright 2018 SBM Web Technologies</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- -->
+   <script src="scripts/lib.js"></script>
+   <script src="scripts/main.js"></script>
+   <!-- -->
+
+</body>
+</html>
